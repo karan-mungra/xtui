@@ -22,4 +22,4 @@ class HStack(StackContainer):
                 last_line_length = len(line)
                 y += 1
 
-            x += self._spacing + last_line_length
+            x += self._StackContainer__spacing + last_line_length

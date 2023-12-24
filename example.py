@@ -1,4 +1,4 @@
-from xtui.containers import VStack
+from xtui.container import VStack
 from xtui.window import Window
 
 

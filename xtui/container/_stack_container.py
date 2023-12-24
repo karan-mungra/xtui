@@ -9,7 +9,7 @@ class StackContainer:
             return str(e)
 
     def __init__(self, spacing: int):
-        self._spacing = spacing
+        self.__spacing = spacing
         self.model: list[str] = []
 
     def bind_model(self, model: list[str]):

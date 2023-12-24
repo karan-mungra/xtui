@@ -13,4 +13,4 @@ class VStack(StackContainer):
                 print(err)
                 return
 
-            y += self._spacing + len(child.splitlines())
+            y += self._StackContainer__spacing + len(child.splitlines())
