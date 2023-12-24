@@ -1,5 +1,6 @@
 from curses import wrapper
 
+
 class Window:
     def __init__(self, child):
         self.child = child

@@ -1,22 +1,13 @@
-from typing import Optional
+from xtui.widget import Widget
 
-class StackContainer:
-    @staticmethod
-    def screen_write(stdscr, y: int, x: int, s: str) -> Optional[str]:
-        try:
-            stdscr.addstr(y, x, s)
-        except Exception as e:
-            return str(e)
 
+class StackContainer(Widget):
     def __init__(self, spacing: int):
         self.__spacing = spacing
-        self.model: list[str] = []
+        self.model: list[Widget] = []
 
-    def bind_model(self, model: list[str]):
+    def bind_model(self, model: list[Widget]):
         self.model = model
 
-    def append(self, s: str):
+    def append(self, s: Widget):
         self.model.append(s)
-
-    def __call__(self, stdscr):
-        pass
